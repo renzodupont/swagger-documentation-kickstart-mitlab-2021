@@ -24,7 +24,7 @@ This will get all the needed dependencies in your folder
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000/docs](http://localhost:3000/docs) to view it in the browser.
 
 # Contact info
 
