@@ -9,6 +9,8 @@ Swagger Documentation Kickstart
 Simple Project to show how to easily add documentation to your Node JS Project from a JSON file.
 It uses "Restaurant" as a sample Model.
 
+BONUS: "Holy Grail" Front End approach running at http://localhost:3000/
+
 # How to Run
 
 1 - Clone the repository in your local computer<br/>
