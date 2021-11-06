@@ -6,9 +6,7 @@ Swagger Documentation Kickstart
 
 # Description
 
-Simple Project to show how to easily add documentation to your Node JS Project.
-Base documentation is loaded from documentation.json and each route is then defined in the code itself so it's easier to maintain.
-
+Simple Project to show how to easily add documentation to your Node JS Project from a JSON file.
 It uses "Restaurant" as a sample Model.
 
 # How to Run
