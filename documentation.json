@@ -1,0 +1,99 @@
+{
+  "swagger": "2.0",
+
+  "info": {
+    "version": "1.0.0",
+    "title": "Swagger Documentation Kickstart",
+    "description": "Simple Project to show how to easily add documentation to your Node JS Project",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+
+  "paths": {
+    "/restaurants": {
+      "get": {
+        "tags": ["Restaurants"],
+        "summary": "Get all Restaurants in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Restaurant"
+            }
+          }
+        }
+      }
+    },
+    "/restaurant": {
+      "post": {
+        "tags": ["Restaurants"],
+        "summary": "Create new restaurant in system",
+        "parameters": [
+          {
+            "name": "restaurant",
+            "in": "body",
+            "description": "Restaurant that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Restaurant"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New restaurant is created",
+            "schema": {
+              "$ref": "#/definitions/Restaurant"
+            }
+          }
+        }
+      }
+    },
+    "/restaurant/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of restaurant that we want to delete",
+          "type": "integer"
+        }
+      ],
+      "delete": {
+        "tags": ["Restaurants"],
+        "summary": "Deletes a Restaurant using id as parameter",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Restaurant"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "Restaurant": {
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

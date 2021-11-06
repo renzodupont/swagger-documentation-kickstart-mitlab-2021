@@ -1,0 +1,25 @@
+{
+  "name": "swagger-documentation-kickstart-mitlab-2021",
+  "version": "1.0.0",
+  "description": "Simple Project to show how to easily add documentation to your Node JS Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renzodupont/swagger-documentation-kickstart-mitlab-2021.git"
+  },
+  "author": "Renzo Dupont",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renzodupont/swagger-documentation-kickstart-mitlab-2021/issues"
+  },
+  "homepage": "https://github.com/renzodupont/swagger-documentation-kickstart-mitlab-2021#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
