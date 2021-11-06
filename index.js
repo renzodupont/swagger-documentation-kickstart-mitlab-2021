@@ -10,6 +10,7 @@ app.use(
     extended: true,
   })
 );
+app.use(express.static("public"));
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 let restaurants = [];
@@ -32,10 +33,6 @@ app.delete("/restaurant/:id", (req, res) => {
 app.post("/restaurant", (req, res) => {
   restaurants.push({ ...req.body });
   res.send("Restaurand added");
-});
-
-app.get("/", (req, res) => {
-  res.send("Running");
 });
 
 /**
